@@ -38,6 +38,9 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Visibility(
         visible: isLoaded,
+        replacement: const Center(
+          child: CircularProgressIndicator(),
+        ),
         child: ListView.builder(
           itemCount: posts?.length,
           itemBuilder: (context, index) {
@@ -66,9 +69,6 @@ class _HomePageState extends State<HomePage> {
               ),
             );
           },
-        ),
-        replacement: const Center(
-          child: CircularProgressIndicator(),
         ),
       ),
     );

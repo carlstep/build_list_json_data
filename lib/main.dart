@@ -1,5 +1,6 @@
-import 'package:build_list_json_data/views/home_page.dart';
 import 'package:flutter/material.dart';
+
+import 'package:build_list_json_data/views/home_page.dart';
 
 void main() {
   runApp(MyApp());
